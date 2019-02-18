@@ -1,7 +1,10 @@
+<div class="header">
+    <h2 class="title">Artists</h2>
+</div>
 <div class="container">
-    <div class="row">
+    <div class="row artists">
             {{#each myArtists}}
-            <div class="col-md-4">
+            <div class="col-md-4 artist">
                 <div class="artist-image-container">
                     <img src="{{this.images.0.url}}" class="artist-image" onerror="if (this.src != 'error.jpg') this.src = '../images/artist.png';"><br>
                 </div>

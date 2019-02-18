@@ -1,11 +1,11 @@
-<div style="background-color: black;">
-    <p>Tracks</p>
+<div class="header">
+    <h2 class="title">Tracks</h2>
 </div>
 {{#each myTracks}}
-    <div class="track">
-        <p>{{this.name}}</p>
+    <center><div class="track">
+        <p class="track-name">{{this.name}}</p>
         <audio controls>
             <source src="{{this.preview_url}}"/>
         </audio>
-    </div>
+    </div></center>
 {{/each}}
